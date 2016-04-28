@@ -1370,6 +1370,7 @@ namespace Novacode
                         case "right": return Novacode.Alignment.right;
                         case "center": return Novacode.Alignment.center;
                         case "both": return Novacode.Alignment.both;
+                        case "distribute": return Novacode.Alignment.distribute;
                     }
                 }
 
@@ -2994,6 +2995,7 @@ namespace Novacode
                 new[] 
                 {
                     new XAttribute(XName.Get("ascii", DocX.w.NamespaceName), fontFamily.Name),
+                    new XAttribute(XName.Get("eastAsia", DocX.w.NamespaceName), fontFamily.Name),
                     new XAttribute(XName.Get("hAnsi", DocX.w.NamespaceName), fontFamily.Name), // Added by Maurits Elbers to support non-standard characters. See http://docx.codeplex.com/Thread/View.aspx?ThreadId=70097&ANCHOR#Post453865
                     new XAttribute(XName.Get("cs", DocX.w.NamespaceName), fontFamily.Name),    // Added by Maurits Elbers to support non-standard characters. See http://docx.codeplex.com/Thread/View.aspx?ThreadId=70097&ANCHOR#Post453865
                 }

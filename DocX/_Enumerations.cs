@@ -578,7 +578,12 @@ namespace Novacode
     /// <summary>
     /// (Justified) Align Paragraph to both the left and right margins, adding extra space between content as necessary.
     /// </summary>
-    both
+    both,
+
+      /// <summary>
+      /// (Justified) Align Paragraph to both the left and right margins, adding extra space between content as necessary.
+      /// </summary>
+    distribute
   };
 
   public enum Direction
